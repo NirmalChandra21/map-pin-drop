@@ -9,7 +9,7 @@ function App() {
     const [pins, setPins] = useLocalStorage("pins", []);
     const [mapInstance, setMapInstance] = useState(null);
     const [selectedPinIndex, setSelectedPinIndex] = useState(null);
-    const [selectedPosition, setSelectedPosition] = useState(null); // Define selectedPosition state
+    const [selectedPosition, setSelectedPosition] = useState(null); 
 
     return (
         <Layout>
@@ -19,7 +19,7 @@ function App() {
                     setPins={setPins}
                     setMapInstance={setMapInstance}
                     selectedPinIndex={selectedPinIndex}
-                    setSelectedPosition={setSelectedPosition} // Pass down setSelectedPosition
+                    setSelectedPosition={setSelectedPosition} 
                 />
                 <Sidebar
                     pins={pins}
