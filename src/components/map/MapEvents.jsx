@@ -12,7 +12,7 @@ function MapEvents({ setPins, pins, setSelectedPosition }) {
         click(e) {
             const { lat, lng } = e.latlng;
             setSelectedPosition(e.latlng); // Update the selected position
-            setSelectedPositionState(e.latlng); // Update local state for rendering the marker
+            setSelectedPositionState(e.latlng); 
             fetchAddress(lat, lng);
         },
     });
@@ -21,8 +21,8 @@ function MapEvents({ setPins, pins, setSelectedPosition }) {
         <Marker
             position={selectedPosition}
             icon={L.divIcon({
-                // Use emoji directly here
-                html: `<div style="font-size: 24px; color: black;">📍</div>`, // Pin emoji
+
+                html: `<div style="font-size: 24px; color: black;">📍</div>`, 
                 className: "",
                 iconSize: [25, 41],
                 iconAnchor: [12, 41],
@@ -34,7 +34,7 @@ function MapEvents({ setPins, pins, setSelectedPosition }) {
                     address={address}
                     setPins={setPins}
                     pins={pins}
-                    setSelectedPosition={setSelectedPosition} // Pass setSelectedPosition to PinForm
+                    setSelectedPosition={setSelectedPosition} 
                 />
             </Popup>
         </Marker>
