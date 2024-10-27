@@ -11,7 +11,7 @@ function useLocalStorage(key, initialValue) {
         }
     });
 
-    // Create a setter function to update the value and localStorage
+
     const setValue = (value) => {
         try {
             const valueToStore =
@@ -23,7 +23,7 @@ function useLocalStorage(key, initialValue) {
         }
     };
 
-    // Return both the stored value and the setter function
+
     return [storedValue, setValue];
 }
 
