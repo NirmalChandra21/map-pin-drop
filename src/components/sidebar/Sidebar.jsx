@@ -15,7 +15,7 @@ function Sidebar({
                 pins={pins}
                 map={map}
                 setPins={setPins}
-                selectedPinIndex={selectedPinIndex} // Pass selectedPinIndex to PinList
+                selectedPinIndex={selectedPinIndex} 
                 setSelectedPinIndex={setSelectedPinIndex}
             />
         </div>
