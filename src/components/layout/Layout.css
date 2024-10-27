@@ -1,0 +1,12 @@
+/* src/components/layout/Layout.css */
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+}

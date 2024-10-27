@@ -1,0 +1,27 @@
+/* src/components/map/PinForm.css */
+
+.pin-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.pin-form label {
+    margin-bottom: 10px;
+}
+
+.pin-form input {
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.pin-form button {
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.pin-form button:hover {
+    background-color: #218838;
+}

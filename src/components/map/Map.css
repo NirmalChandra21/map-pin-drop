@@ -1,0 +1,6 @@
+/* src/components/map/Map.css */
+
+.map-container {
+    flex: 1;
+    height: 100%;
+}

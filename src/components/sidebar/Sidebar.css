@@ -1,0 +1,9 @@
+/* src/components/sidebar/Sidebar.css */
+
+.sidebar {
+    flex: 1;
+    max-width: 300px;
+    overflow-y: auto;
+    border-left: 1px solid #ddd;
+    background-color: #f8f9fa;
+}
