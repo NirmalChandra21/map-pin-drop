@@ -12,13 +12,13 @@ function PinForm({ position, address, setSelectedPosition, setPins, pins }) {
             lat,
             lng,
             remarks,
-            address, // Use the fetched address
+            address, 
         };
 
         const updatedPins = [...pins, newPin];
         setPins(updatedPins);
-        localStorage.setItem("pins", JSON.stringify(updatedPins)); // Optional: Save to localStorage
-        setSelectedPosition(null); // Close the popup
+        localStorage.setItem("pins", JSON.stringify(updatedPins)); 
+        setSelectedPosition(null); 
     };
 
     return (
@@ -37,7 +37,7 @@ function PinForm({ position, address, setSelectedPosition, setPins, pins }) {
                 <input
                     type="text"
                     value={address}
-                    readOnly // Display the fetched address as read-only
+                    readOnly 
                 />
             </label>
             <button type="submit">Save Pin</button>
